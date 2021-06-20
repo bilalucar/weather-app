@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { getForecast } from '../../api/weather';
 import Layout from '../../components/Layout';
 import Forecast from '../../components/Forecast';
-import { getCitiesFromLocalStorage, setCitiesFromLocalStorage } from '../../utils/sotrage';
+import { getCitiesFromLocalStorage, setCitiesFromLocalStorage } from '../../utils/storage';
 
 export default function Weather({ data }) {
   useEffect(async function () {

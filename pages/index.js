@@ -2,7 +2,7 @@ import Current from '../components/Current';
 import { getCurrent, getCurrentByCityId } from '../api/weather';
 import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
-import { getCitiesFromLocalStorage, removeCityByIdFromLocalStorage } from '../utils/sotrage';
+import { getCitiesFromLocalStorage, removeCityByIdFromLocalStorage } from '../utils/storage';
 
 export default function Home() {
   const [searchInput, setSearchInput] = useState();
