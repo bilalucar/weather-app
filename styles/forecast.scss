@@ -1,0 +1,40 @@
+
+.forecast-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  margin-top: 20px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    background: rgba(255,255,255,0.6);
+    flex-direction: column;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    flex: 1;
+    min-width: 160px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &__degree {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    span {
+      text-align: center;
+    }
+
+    img {
+      max-width: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
